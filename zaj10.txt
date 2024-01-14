@@ -1,0 +1,32 @@
+sk.eyJ1IjoibWF0bWl0YW4iLCJhIjoiY2xyZTBrOXNkMDdzNDJqbzlsdG1rcDY5YiJ9.2EXj0yigF0_fErrntrHQOg
+
+curl -X POST "https://api.mapbox.com/uploads/v1/matmitan/credentials?access_token=sk.eyJ1IjoibWF0bWl0YW4iLCJhIjoiY2xyZTBrOXNkMDdzNDJqbzlsdG1rcDY5YiJ9.2EXj0yigF0_fErrntrHQOg"
+
+{"bucket":"tilestream-tilesets-production",
+"key":"07/_pending/ginmncitaoz13wo02fmo0erlc/matmitan",
+"accessKeyId":"ASIATNLVGLR2KROQPEQA",
+"secretAccessKey":"5/RPkQSSxgy/bgtInxkLmkxqu8JiNueBWSZUyEd4",
+"sessionToken":"FwoGZXIvYXdzEOf//////////wEaDO00r+SPJrhFZyrMhSKUAmvIwwfp8FI3Y7usw/K8o65ePEwmbZSdPZAyLiGYYmAe63wQHoAJ5G0pBu42DPeDqo17ZPWrKYZmZpa1wVKlmezLTss/jbp1j/Y7ycLyqgMvonbclnsLFxAdqZ5IsRC8tiTpPPTS5V5Q9dq3sOrUNwbRAmxdeXmvH5Fixa8iQ1SZJoL6y+2nNvpdaQo+mCNkbwmSgA3sKRf/4yBTpDCrA9mCfYUMNZ0ToH8PDRrlfqH0xgcCevme9n4OaUeMAhmQDOJYjCAiYZgFW31/5XLDDaulewmPTab4XJyDnUORH7NmBhBac4ZRBSLImJ9LFA7Jj2wSiqMhxMR1dVAe/5Xyjk3Q0QftyNuoJW1Ph4jv2fm+sQ6XTyiUqJGtBjIpbQJAghX7DGp/RBjI+p6/r1hwmsTMYLq5eY/Y9tRnvyM/5EA02bbvapA=",
+"url":"https://tilestream-tilesets-production.s3.amazonaws.com/07/_pending/ginmncitaoz13wo02fmo0erlc/matmitan"}
+
+$env:AWS_ACCESS_KEY_ID="ASIATNLVGLR2KROQPEQA"
+$env:AWS_SECRET_ACCESS_KEY="5/RPkQSSxgy/bgtInxkLmkxqu8JiNueBWSZUyEd4"
+$env:AWS_SESSION_TOKEN="FwoGZXIvYXdzEOf//////////wEaDO00r+SPJrhFZyrMhSKUAmvIwwfp8FI3Y7usw/K8o65ePEwmbZSdPZAyLiGYYmAe63wQHoAJ5G0pBu42DPeDqo17ZPWrKYZmZpa1wVKlmezLTss/jbp1j/Y7ycLyqgMvonbclnsLFxAdqZ5IsRC8tiTpPPTS5V5Q9dq3sOrUNwbRAmxdeXmvH5Fixa8iQ1SZJoL6y+2nNvpdaQo+mCNkbwmSgA3sKRf/4yBTpDCrA9mCfYUMNZ0ToH8PDRrlfqH0xgcCevme9n4OaUeMAhmQDOJYjCAiYZgFW31/5XLDDaulewmPTab4XJyDnUORH7NmBhBac4ZRBSLImJ9LFA7Jj2wSiqMhxMR1dVAe/5Xyjk3Q0QftyNuoJW1Ph4jv2fm+sQ6XTyiUqJGtBjIpbQJAghX7DGp/RBjI+p6/r1hwmsTMYLq5eY/Y9tRnvyM/5EA02bbvapA="
+
+aws s3 cp C:\Users\mateu\OneDrive\Pulpit\Bazy_danych_przestrzennych\Zadania\Zajecia10\T2019_POI.zip s3://tilestream-tilesets-production/07/_pending/ginmncitaoz13wo02fmo0erlc/matmitan --region us-east-1
+
+curl -X POST -H "Content-Type: application/json" -H "Cache-Control: no-cache" -d '{
+  "url": "http://tilestream-tilesets-production.s3.amazonaws.com/07/_pending/ginmncitaoz13wo02fmo0erlc/matmitan",
+  "tileset": "matmitan.poi1",
+  "name": "mmpoi1"
+}' 'https://api.mapbox.com/uploads/v1/matmitan?access_token=sk.eyJ1IjoibWF0bWl0YW4iLCJhIjoiY2xyZTBrOXNkMDdzNDJqbzlsdG1rcDY5YiJ9.2EXj0yigF0_fErrntrHQOg'
+
+{"id":"clre13gml0m7p1tn07ip32ebq",
+"name":"mmpoi",
+"complete":false,
+"error":null,
+"created":"2024-01-14T21:48:56.702Z",
+"modified":"2024-01-14T21:48:56.702Z",
+"tileset":"matmitan.poi",
+"owner":"matmitan",
+"progress":0}
