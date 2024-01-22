@@ -1,0 +1,8 @@
+import requests
+
+url = 'http://LAPTOP-RRT6TVTM/fmedatadownload/Dashboards/zaj11.fmw?E-MAIL=mateusz.mitan%40gmail.com&HASLO=&KLIENT_E-MAIL=mateusz.mitan%40gmail.com&POWIAT=powiat%20tatrza%C5%84ski&MAX_POKRYCIE_CHMURAMI=50&DATA_POCZATKOWA=20230701000000&DATA_KONCOWA=20230731000000&SourceDataset_SHAPEFILE=C%3A%5CUsers%5Cmateu%5COneDrive%5CPulpit%5CBazy_danych_przestrzennych%5CZadania%5CZajecia9%5Cpowiaty.shp&DestDataset_GEOTIFF=C%3A%5CUsers%5Cmateu%5COneDrive%5CPulpit%5CBazy_danych_przestrzennych%5CZadania%5CZajecia9&opt_showresult=false&opt_servicemode=sync'
+myobj = {'Authorization': 'fmetoken token=80bced0006b132419cbebff018fdf02df7aca853'}
+
+x = requests.post(url, headers = myobj)
+
+print(x.text)

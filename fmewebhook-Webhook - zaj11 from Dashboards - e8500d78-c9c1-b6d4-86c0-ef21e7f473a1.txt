@@ -1,0 +1,26 @@
+Name:
+Webhook - zaj11 from Dashboards - e8500d78-c9c1-b6d4-86c0-ef21e7f473a1
+
+Token:
+80bced0006b132419cbebff018fdf02df7aca853
+
+Description:
+Allow users to run Dashboards/zaj11 without logging in
+
+Created Date:
+2024-01-22T14:58:26.899Z
+
+Expiration Date:
+2025-01-21T23:00:00.000Z
+
+Enabled:
+true
+
+Authorization with Header:
+http://LAPTOP-RRT6TVTM/fmedatadownload/Dashboards/zaj11.fmw?E-MAIL=mateusz.mitan%40gmail.com&HASLO=&KLIENT_E-MAIL=mateusz.mitan%40gmail.com&POWIAT=powiat%20tatrza%C5%84ski&MAX_POKRYCIE_CHMURAMI=50&DATA_POCZATKOWA=20230701000000&DATA_KONCOWA=20230731000000&SourceDataset_SHAPEFILE=C%3A%5CUsers%5Cmateu%5COneDrive%5CPulpit%5CBazy_danych_przestrzennych%5CZadania%5CZajecia9%5Cpowiaty.shp&DestDataset_GEOTIFF=C%3A%5CUsers%5Cmateu%5COneDrive%5CPulpit%5CBazy_danych_przestrzennych%5CZadania%5CZajecia9&opt_showresult=false&opt_servicemode=sync
+Header Key: Authorization
+Header Value: fmetoken token=80bced0006b132419cbebff018fdf02df7aca853
+
+Authorization with Query String:
+http://LAPTOP-RRT6TVTM/fmedatadownload/Dashboards/zaj11.fmw?E-MAIL=mateusz.mitan%40gmail.com&HASLO=&KLIENT_E-MAIL=mateusz.mitan%40gmail.com&POWIAT=powiat%20tatrza%C5%84ski&MAX_POKRYCIE_CHMURAMI=50&DATA_POCZATKOWA=20230701000000&DATA_KONCOWA=20230731000000&SourceDataset_SHAPEFILE=C%3A%5CUsers%5Cmateu%5COneDrive%5CPulpit%5CBazy_danych_przestrzennych%5CZadania%5CZajecia9%5Cpowiaty.shp&DestDataset_GEOTIFF=C%3A%5CUsers%5Cmateu%5COneDrive%5CPulpit%5CBazy_danych_przestrzennych%5CZadania%5CZajecia9&opt_showresult=false&opt_servicemode=sync&token=80bced0006b132419cbebff018fdf02df7aca853
+
